@@ -1,6 +1,7 @@
 # Configure the Google Cloud provider
 provider "google" {
-  project = "terraform-examples-gcloud"
+  credentials = file("cred.json")
+  project = "silent-thunder-256105"
   region  = "us-east1-b"
 }
 
